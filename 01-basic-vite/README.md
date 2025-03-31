@@ -1,5 +1,13 @@
 # React + Vite
 
+
+#Best Practices
+ - Always use capital names of funtions otherwise they will not run
+ - In Main and app we can only return one element so if we want more just put them in a div
+ - Name of file is also capital(good practice)
+ - to reload project in search >re and tap for first
+ 
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
