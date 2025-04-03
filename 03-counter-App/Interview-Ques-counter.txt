@@ -1,0 +1,29 @@
+if:
+    const addValue=()=>{
+      setCount(counter+1)
+      setCount(counter+1)
+      setCount(counter+1)
+      setCount(counter+1)
+  }
+
+  will this add the value by 4?
+
+
+ANS-  No, in this the function will run in batch in which all the counters are same and only 1 will be increased as in react fiber take 
+      this responsiblity to update all the updates in batches so that it will be more efficient
+
+
+
+SO:
+  Now if you want to increase it my 4?
+
+ANS: Then the setCount method accepts a callback in which we can pass the statement 4 time to increse it by 4 as:
+
+    const addValue=()=>{
+      setCount((counter)=>counter+1)
+      setCount((counter)=>counter+1)
+      setCount((counter)=>counter+1)
+      setCount((counter)=>counter+1)
+  }
+
+  like this it take these 4 statemment as diff batches to be performed respectively.
